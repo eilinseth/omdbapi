@@ -49,7 +49,7 @@ document.addEventListener('click',function(e){
                         const response = await fetch('http://www.omdbapi.com/?apikey=58b5402f&i='+id);
                         const data = await response.json();
                         
-                        modalContent.innerHTML = `<div class="w-[80%] bg-slate-100 h-[60%] md:h-[63%] lg:h-[73%] relative p-[16px] z-[2000] ">
+                        modalContent.innerHTML = `<div class="w-[80%] bg-slate-100 h-[80%] sm:h-[60%] md:h-[63%] lg:h-[73%] relative p-[16px] z-[2000] ">
             <h1 class="text-3xl mb-2 border-b-2 border-slate-600">Movie Details : </h1>
             <div class="flex items-center justify-center gap-5 mt-5 lg:mt-2">
                 <div class="w-[35%] h-full">
