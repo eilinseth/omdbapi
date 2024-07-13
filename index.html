@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Api</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-full h-20 bg-slate-800 flex items-center">
+        <div class="container mx-auto px-[8%]">
+            <h1 class="text-white text-3xl">Eilin Movies</h1>
+        </div>
+    </header>
+    <section class="w-full pb-8 mt-8 border-b-4">
+        <div class="container mx-auto px-[8%] flex justify-center flex-wrap" >
+            <h1 class="text-4xl text-slate-800 font-semibold text-center w-full">Search Movies</h1>
+            <input type="text" class="text-lg shadow-md shadow-sky-800 py-2 px-4 w-[60%] border border-slate-800 text-center mt-3" placeholder="Enter Title ... " id="input-search" autocomplete="off">
+        </div>
+    </section>
+    
+    <section class="w-full mt-6 px-8 ">
+        <div class="px-[8%] container mx-auto">
+            <h1 class="text-3xl font-semibold">Movie List : </h1>
+            <div class="mt-4 flex flex-wrap justify-center gap-4" id="content">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- modal box-->
+     <div class="relative z-10 hidden modal">
+     <div class="fixed bg-slate-900 top-0 left-0 w-full h-full opacity-70 "></div>
+     <div class="top-0 left-0 fixed w-full h-full flex items-center justify-center modal-content">
+        
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
